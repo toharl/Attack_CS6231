@@ -1,4 +1,4 @@
-# Attack in collaborative training settings.
+# Attack in collaborative settings.
 Assuming we have N datasets that collaborate to train a classifier in one server. Some of the collaborators is able to send poisoned or redundant data (duplicates).
 We consider the case of using loss-based filter against poison attack and collaborative settings and show that this model is vulnerable to a simple redundant attack.
 Our simple attack is a dataset consists of duplicate samples.
@@ -6,7 +6,7 @@ Our simple attack is a dataset consists of duplicate samples.
 This code is modified from the project: https://github.com/kuangliu/pytorch-cifar that trains CIFAR10 for classification. In our version we have added the attacks (ours and poison attack) and also implmented a filter algorithm against poison attack.
 
 
-First line of experiments:
+## First line of experiments:
 N datasets (from N contributors), one of them consists of duplicates of one sample.
 CIFAR10 consists of 50,000 training samples and 10,000 test samples.
 We divide the training samples to N contributors. d is the size  of each dataset. d_a is the size of the attacker dataset, d_i is the size of dataset i.
@@ -16,11 +16,11 @@ Architecture -EfficientNetB0 (few CNN layers…)
 Best in 150 epochs
 filter fraction =1 (equivalent to no filter)
 
-To reproduce the results of the first line of experiments:
+### To reproduce the results of the first line of experiments:
 for example, our attack:
-python main.py --lr=0.01 --f=0.8 --attack=True
+'python main.py --lr=0.01 --f=0.8 --attack=True'
 for example, poison attack:
-python main.py --lr=0.01 --f=0.8 --poison=True
+'python main.py --lr=0.01 --f=0.8 --poison=True'
 
 Note that by default: N=6, num of epochs =150, size of attacker dataset is 50k/(N-1). you can also specify --d_a for using different size of attacker dataset.
 # Original Readme:
