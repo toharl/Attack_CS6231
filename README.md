@@ -3,7 +3,7 @@ Assuming we have N datasets that collaborate to train a classifier in one server
 We consider the case of using loss-based filter against poison attack and collaborative settings and show that this model is vulnerable to a simple redundant attack.
 Our simple attack is a dataset consists of duplicate samples.
 
-This code is modified from the project: https://github.com/kuangliu/pytorch-cifar that trains CIFAR10 for classification. In our version we have added the attacks.
+This code is modified from the project: https://github.com/kuangliu/pytorch-cifar that trains CIFAR10 for classification. In our version we have added the attacks (ours and poison attack) and also implmented a filter algorithm against poison attack.
 
 
 First line of experiments:
