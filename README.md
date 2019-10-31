@@ -18,9 +18,9 @@ filter fraction =1 (equivalent to no filter)
 
 ### To reproduce the results of the first line of experiments:
 for example, our attack:
-'python main.py --lr=0.01 --f=0.8 --attack=True'
+`python main.py --lr=0.01 --f=0.8 --attack=True`
 for example, poison attack:
-'python main.py --lr=0.01 --f=0.8 --poison=True'
+`python main.py --lr=0.01 --f=0.8 --poison=True`
 
 Note that by default: N=6, num of epochs =150, size of attacker dataset is 50k/(N-1). you can also specify --d_a for using different size of attacker dataset.
 # Original Readme:
