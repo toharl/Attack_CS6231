@@ -1,5 +1,5 @@
 # Attack in collaborative settings.
-Assuming we have N datasets that collaborate to train a classifier in one server. Some of the collaborators is able to send poisoned or redundant data (duplicates).
+Assuming we have N datasets that collaborate to train a classifier in one server. Some of the collaborators are able to send poisoned or redundant data (duplicates).
 We consider the case of using loss-based filter against poison attack and collaborative settings and show that this model is vulnerable to a simple redundant attack.
 Our simple attack is a dataset consists of duplicate samples.
 
